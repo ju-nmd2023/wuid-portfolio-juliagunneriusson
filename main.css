@@ -1,0 +1,91 @@
+* {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* HAEDER */
+header{
+    display: flex;
+align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom : solid darkcyan
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px dashed darkgoldenrod;
+    display: inline;
+    padding: 5px;
+
+   
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+   
+}
+li{
+    margin-left: 3rem;
+ 
+}
+
+a {
+    color: rgb(1, 0, 0);
+
+  
+}
+
+/*  MAIN  */
+main{
+    
+    text-align: center;
+    border-bottom: 2px solid darkgoldenrod
+
+    
+}
+
+.main-image {
+    width:50% ;
+
+
+}
+.second-image {
+    width: 30%;
+}
+
+.third-image{
+    width: 30%;
+}
+
+.fourth-image{
+    width: 30%;
+}
+/*CONTACT SECTION*/
+.contact-information{
+   width: 50%;
+
+    
+
+}
+
+/*CATEGORY SECTION*/
+.category-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* FOOTER */
+footer{
+    margin-top: 3rem;
+   border-top: 2px solid darkgoldenrod
+}
