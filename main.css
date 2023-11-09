@@ -45,7 +45,6 @@ a {
 
 /*  MAIN  */
 main{
-    
     text-align: center;
     border-bottom: 2px solid darkgoldenrod
 
@@ -83,6 +82,39 @@ main{
     grid-template-columns: repeat(3, 1fr);
 }
 
+/*CONTAINER SECTION*/
+form {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    margin-bottom: 20%;
+}
+
+.input_container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.input_container label { font-size: 1rem;}
+
+.input_container input, 
+textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid bla;
+    resize: none;
+}
+button{
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background: #d727c6;
+    color: FFF;
+    cursor: pointer;
+}
 
 /* FOOTER */
 footer{
