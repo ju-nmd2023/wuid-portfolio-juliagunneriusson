@@ -40,7 +40,6 @@ li{
 a {
     color: rgb(1, 0, 0);
 
-  
 }
 
 /*  MAIN  */
@@ -70,8 +69,6 @@ main{
 /*CONTACT SECTION*/
 .contact-information{
    width: 50%;
-
-    
 
 }
 
@@ -116,8 +113,40 @@ button{
     cursor: pointer;
 }
 
+
+
 /* FOOTER */
 footer{
     margin-top: 3rem;
    border-top: 2px solid darkgoldenrod
 }
+
+/*WORK SECTION*/
+.work-section{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr)
+
+}
+
+@media screen and (max-width:510px) {
+    header, ul, footer,.extrawork-section, .work-section {
+        flex-direction: column;
+        align-items: start;
+    }
+    ul{
+        margin-top: 0;
+    }
+    li{
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:510px) {
+    .work-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
