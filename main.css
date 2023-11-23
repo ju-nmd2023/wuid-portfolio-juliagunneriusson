@@ -1,152 +1,184 @@
 * {
-    font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 /* HAEDER */
-header{
-    display: flex;
-align-items: center;
-    text-align: center;
-    margin-bottom: 3rem;
-    border-bottom : solid darkcyan
-   
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: solid darkcyan;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #logo {
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: 2px dashed darkgoldenrod;
-    display: inline;
-    padding: 5px;
-
-   
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px dashed darkgoldenrod;
+  display: inline;
+  padding: 5px;
 }
 ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-
-   
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
-li{
-    margin-left: 3rem;
- 
+li {
+  margin-left: 3rem;
 }
 
 a {
-    color: rgb(1, 0, 0);
+  color: rgb(1, 0, 0);
+}
 
+/* BODY */
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  50% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  60% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  70% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  80% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  90% {
+    transform: rotate(-20deg);
+    scale: (1 2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*  MAIN  */
-main{
-    text-align: center;
-    border-bottom: 2px solid darkgoldenrod
-
-    
+main {
+  text-align: center;
+  border-bottom: 2px solid darkgoldenrod;
 }
 
 .main-image {
-    width:50% ;
-
-
+  width: 50%;
 }
 .second-image {
-    width: 30%;
+  width: 30%;
 }
 
-.third-image{
-    width: 30%;
+.third-image {
+  width: 30%;
 }
 
-.fourth-image{
-    width: 30%;
+.fourth-image {
+  width: 30%;
 }
 /*CONTACT SECTION*/
-.contact-information{
-   width: 50%;
-
+.contact-information {
+  width: 50%;
 }
 
 /*CATEGORY SECTION*/
-.category-section{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.category-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /*CONTAINER SECTION*/
 form {
-    margin-left: 20rem;
-    margin-right: 20rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-    margin-bottom: 20%;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  margin-bottom: 20%;
 }
 
-.input_container{
+.input_container {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
-.input_container label { font-size: 1rem;}
+.input_container label {
+  font-size: 1rem;
+}
 
-.input_container input, 
+.input_container input,
 textarea {
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid bla;
-    resize: none;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid bla;
+  resize: none;
 }
-button{
-    align-self: flex-start;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    border: none;
-    background: #d727c6;
-    color: FFF;
-    cursor: pointer;
+button {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  color: FFF;
+  cursor: pointer;
+  background-color: blanchedalmond;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  border-radius: 20%;
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
-
-
 
 /* FOOTER */
-footer{
-    margin-top: 3rem;
-   border-top: 2px solid darkgoldenrod
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid darkgoldenrod;
 }
 
 /*WORK SECTION*/
-.work-section{
+.work-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 510px) {
+  header,
+  ul,
+  footer,
+  .extrawork-section,
+  .work-section {
+    flex-direction: column;
+    align-items: start;
+  }
+  ul {
+    margin-top: 0;
+  }
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .work-section {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2,1fr)
-
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-@media screen and (max-width:510px) {
-    header, ul, footer,.extrawork-section, .work-section {
-        flex-direction: column;
-        align-items: start;
-    }
-    ul{
-        margin-top: 0;
-    }
-    li{
-        margin-left: 0;
-        margin-bottom: 1rem;
-    }
-}
-
-@media screen and (min-width:510px) {
-    .work-section{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
